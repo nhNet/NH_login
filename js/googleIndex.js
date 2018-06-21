@@ -13,10 +13,12 @@ function onSignIn(googleUser) {
    var profileImg = profile.getImageUrl();
    var profileName = profile.getName();
    var profileEmail = profile.getEmail();
-   var inputEmail = document.querySelector('.myInputEmail').value;
    document.querySelector('.submit').onclick= function(){
+      var inputEmail = document.querySelector('.myInputEmail').value;
        if(inputEmail==profileEmail){
-           document.body.innerHTML="";
+           document.body.innerHTML="Worked";
+       }else{
+           document.body.innerHTML="Oops";
        }
    }
 }
