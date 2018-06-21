@@ -37,10 +37,9 @@ function verifyMyUser(googleUser) {
            document.body.innerHTML='<div style="height:64.9vh;" class="borderBox">'+
                                      '<div class="loginBox"><br><br>'+
                                      '<h1 style="color:#555555;font-size:50px;">Matching Data...</h1><br><br>'+
-                                     '<h1 style="color:#555555;font-size:30px;">Firstname: <br></h1><span style="color:#555555;font-size:20px;margin-left:0%;">'+profileName+'</span><br><br>'+
-                                     '<h1 style="color:#555555;font-size:30px;">Surname: <br></h1><span style="color:#555555;font-size:20px;margin-left:0%;">'+surName+'</span><br><br>'+
+                                     '<h1 style="color:#555555;font-size:30px;">Fullname: <br></h1><span style="color:#555555;font-size:20px;margin-left:0%;">'+profileName+'</span><br><br>'+
                                      '<h1 style="color:#555555;font-size:30px;">Email: <br></h1><span style="color:#555555;font-size:20px;margin-left:0%;">'+inputEmail+'</span><br><br>'+
-                                     '<h1 style="color:#555555;font-size:30px;">Password: <br></h1><span style="color:#555555;font-size:20px;margin-left:0%;">'+inputPassword+'</span><br><br>'+
+                                     '<h1 style="color:#555555;font-size:30px;">Password: <br></h1><span style="color:#555555;font-size:20px;margin-left:0%;">'+inputPassword+'</span><br><br><br>'+
                                      '<h1 style="color:#555555;text-align:right;font-size:30px;">All correct!</h1>'+
                                      '<h1 style="color:#555555;text-align:right;font-size:40px;">Loading Content...</h1>'+
                                      '</div>'+
