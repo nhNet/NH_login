@@ -30,7 +30,14 @@ box-shadow:10px 10px 200px #444444;
       opacity:1;
    }
 }
+a{
+   color:#5388F6;
+   text-decoration:none;
+}
 .lang{
+   color:#FFFFFF;
+   font-size:13px;
+   margin-left:34.5%;
    opacity:0;
    animation:fromTransparency 2s;
    animation-delay:7s;
