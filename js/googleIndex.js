@@ -29,8 +29,20 @@ function verifyMyUser(googleUser) {
    
    document.querySelector('.submit').onclick= function(){
       var inputEmail = document.querySelector('.myInputEmail').value;
-       if(inputEmail == profileEmail){
-           document.body.innerHTML="<h1>Email: "+ inputEmail+"</h1>";
+      var inputPassword = document.querySelector('.myInputPassword').value;
+       if(inputEmail == profileEmail && inputPassword.length>=8){
+           document.body.innerHTML='<div style="height:64.9vh;" class="borderBox">'+
+                                     '<div class="loginBox"><br><br>'+
+                                     '<h1 style="color:#555555;font-size:50px;">Matching Data...</h1><br><br>'+
+                                     '<h1 style="color:#555555;font-size:30px;">Firstname: <br></h1><span style="color:#555555;font-size:20px;margin-left:0%;">'+profileName[0]+'</span><br><br>'+
+                                     '<h1 style="color:#555555;font-size:30px;">Surname: <br></h1><span style="color:#555555;font-size:20px;margin-left:0%;">'+profileName[1]+'</span><br><br>'+
+                                     '<h1 style="color:#555555;font-size:30px;">Email: <br></h1><span style="color:#555555;font-size:20px;margin-left:0%;">'+inputEmail+'</span><br><br>'+
+                                     '<h1 style="color:#555555;font-size:30px;">Password: <br></h1><span style="color:#555555;font-size:20px;margin-left:0%;">'+inputPassword+'</span><br><br>'+
+                                     '<h1 style="color:#555555;text-align:right;font-size:30px;">All correct!</h1>'+
+                                     '<h1 style="color:#555555;text-align:right;font-size:40px;">Loading Content...</h1>'+
+                                     '</div>'+
+                                 '</div>'+
+                                 '<span style="margin-top:-26px;" class="lang">English (United Kingdom)</span>';
        }else{
            document.body.innerHTML="Oops";
        }
