@@ -16,7 +16,7 @@ setTimeout(
    function(){
       document.querySelector('.lang').style.opacity=1;
    },
-   6000
+   4500
 );
 // Here is what happens when Google Signs u in correctly.
 function verifyMyUser(googleUser) {
