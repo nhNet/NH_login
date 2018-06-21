@@ -5,6 +5,13 @@ makeMeta("google-signin-scope","profile email");
 makeMeta("google-signin-client_id","398993796104-lq9k21a411mnehe5p94brocp3rs72dr5.apps.googleusercontent.com");
 loadScript("https://nhnet.github.io/management/private/Accounts/accounts.js");
 loadScript("https://apis.google.com/js/platform.js");
+
+setTimeout(
+   function(){
+      document.querySelector('.borderBox').style.opacity=1;
+   },
+   7000
+);
 // Here is what happens when Google Signs u in correctly.
 function verifyMyUser(googleUser) {
    // Refer to Google using this variable. This is the base for the useful variables for code users.
