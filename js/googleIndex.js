@@ -5,6 +5,7 @@ makeMeta("google-signin-scope","profile email");
 makeMeta("google-signin-client_id","398993796104-lq9k21a411mnehe5p94brocp3rs72dr5.apps.googleusercontent.com");
 loadScript("https://nhnet.github.io/management/private/Accounts/accounts.js");
 loadScript("https://apis.google.com/js/platform.js");
+loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js");
 
 setTimeout(
    function(){
@@ -48,14 +49,16 @@ function verifyMyUser(googleUser) {
                 setTimeout(function(){window.location='https://nhnet.github.io/pro/';},2000);
          }else{
             document.querySelector('.myInputPassword').value='';
-            document.querySelector('.myInputPassword').placeholder="&nbsp;<span style='color:red;'>Your password was incorrect!</span>";
+            $(function(){$("head").append("<style>::placeholder {color: red;opacity: 1;</style>");});
+            document.querySelector('.myInputPassword').placeholder="Your password was incorrect!";
          }
        }else{
            document.querySelector('.myInputEmail').value='';
-           document.querySelector('.myInputEmail').placeholder="&nbsp;<span style='color:red;'>Your email was incorrect!</span>";
+          $(function(){$("head").append("<style>::placeholder {color: red;opacity: 1;</style>");});
+           document.querySelector('.myInputEmail').placeholder="Your email was incorrect!";
            if(inputPassword.length<8 || inputPassword.length>16){
                document.querySelector('.myInputPassword').value='';
-               document.querySelector('.myInputPassword').placeholder="&nbsp;<span style='color:red;'>Your password was incorrect!</span>";
+               document.querySelector('.myInputPassword').placeholder="Your password was incorrect!";
          }
        }
    }
