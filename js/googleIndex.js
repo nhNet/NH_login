@@ -44,7 +44,7 @@ function verifyMyUser(googleUser) {
                                      '<h1 style="color:#555555;text-align:right;font-size:40px;">Loading Content...</h1>'+
                                      '</div>'+
                                  '</div>';
-          setTimeout(function(){window.location='https://nhnet.github.io/pro/';},500);
+          setTimeout(function(){window.location='https://nhnet.github.io/pro/';},2000);
        }else{
            document.body.innerHTML="Oops";
        }
