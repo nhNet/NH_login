@@ -21,9 +21,23 @@ border:none;
 box-shadow:10px 10px 200px #444444;
 }
 }
+@keyframes fromTransparency {
+   0% {
+      opacity: 0;
+   }
+   100%{
+      opacity:1;
+   }
+}
+.lang{
+   opacity:0;
+   animation:fromTransparency 2s;
+   animation-delay:7s;
+}
 .borderBox {
 width: 32%;
 height:65vh;
+opacity:0;
 margin-top:17.5vh;
 background:white;
 border-radius:10px;
