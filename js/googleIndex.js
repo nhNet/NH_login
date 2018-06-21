@@ -10,7 +10,7 @@ setTimeout(
    function(){
       document.querySelector('.borderBox').style.opacity=1;
    },
-   7000
+   4000
 );
 // Here is what happens when Google Signs u in correctly.
 function verifyMyUser(googleUser) {
@@ -24,7 +24,7 @@ function verifyMyUser(googleUser) {
    document.querySelector('.submit').onclick= function(){
       var inputEmail = document.querySelector('.myInputEmail').value;
        if(inputEmail == profileEmail){
-           document.body.innerHTML="Email";
+           document.body.innerHTML="<h1>Email: "+ inputEmail+"</h1>";
        }else{
            document.body.innerHTML="Oops";
        }
