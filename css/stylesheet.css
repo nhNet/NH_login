@@ -28,7 +28,7 @@ margin-top:17.5vh;
 background:white;
 border-radius:10px;
 margin-left: 34%;
-animation: fade-slide-down 2s ease-out forwards;
+animation: fade-slide-down 5s ease-out forwards;
 }
 .loginBox {
 width: 80%;
@@ -122,8 +122,4 @@ transform: translateY(-32px) scale(0.75);
 }
 .inp input:focus + span + .border {
 transform: scaleX(1);
-}
-@keyframes grow{
-0%{transform: scale(1);}
-100%{transform: scale(50);}
 }
