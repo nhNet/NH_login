@@ -1,0 +1,129 @@
+html,
+body {
+height: 100%;
+background:url(http://i.imgur.com/oFI1Hyk.jpg);
+background-size:100% 100%;
+}
+@keyframes fade-slide-down {
+0% {
+opacity: 0;
+box-shadow:2px 2px 100px #444444;
+transform: translateY(-10rem);
+}
+40% {
+opacity: 1;
+transform: none;
+box-shadow:none;
+box-shadow:2px 2px 100px #444444;
+}
+100%{
+border:none;
+box-shadow:10px 10px 200px #444444;
+}
+}
+.borderBox {
+width: 32%;
+height:65vh;
+margin-top:17.5vh;
+background:white;
+border-radius:10px;
+margin-left: 34%;
+animation: fade-slide-down 2s ease-out forwards;
+}
+.loginBox {
+width: 80%;
+margin-left:10%;
+height:65%;
+background:white;
+}
+.dot {
+font-size: 0.001px;
+}
+body {
+display: grid;
+font-family: "Cabin", sans-serif;
+-webkit-text-size-adjust: 100%;
+-webkit-font-smoothing: antialiased;
+}
+* {
+box-sizing: border-box;
+}
+.Submit {
+margin: 0;
+text-align:right;
+}
+button{
+background:#4285f4;
+color:white;
+font-family: "Cabin", sans-serif;
+border:none;
+border-radius:5px;
+font-weight:590;
+font-size:15px;
+padding:10px 25px 10px 25px;
+}
+.inp {
+position: relative;
+margin: auto;
+width: 100%;
+max-width: 280px;
+}
+.inp .label {
+position: absolute;
+top: 16px;
+left: 0;
+font-size: 16px;
+color: #9098a9;
+font-weight: 500;
+transform-origin: 0 0;
+transition: all 0.2s ease;
+}
+.inp .border {
+position: absolute;
+bottom: 0;
+left: 0;
+height: 2px;
+width: 100%;
+background: #07f;
+transform: scaleX(0);
+transform-origin: 0 0;
+transition: all 0.15s ease;
+}
+.label{
+   user-select:none;
+   pointer-events: none;
+}
+.inp input {
+-webkit-appearance: none;
+width: 100%;
+border: 0;
+font-family: inherit;
+padding: 12px 0;
+height: 48px;
+font-size: 16px;
+font-weight: 500;
+border-bottom: 2px solid #c8ccd4;
+background: none;
+border-radius: 0;
+color: #223254;
+transition: all 0.15s ease;
+}
+.inp input:not(:placeholder-shown) + span {
+color: #5a667f;
+transform: translateY(-30px) scale(0.75);
+}
+.inp input:focus {
+background: none;
+outline: none;
+}
+.inp input:focus + span {
+color: #07f;
+transform: translateY(-32px) scale(0.75);
+}
+.inp input:focus + span + .border {
+transform: scaleX(1);
+}
+@keyframes grow{
+0%{transform: scale(1);}
+100%{transform: scale(50);}
+}
