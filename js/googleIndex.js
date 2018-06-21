@@ -47,12 +47,12 @@ function verifyMyUser(googleUser) {
                                        '</div>';
                 setTimeout(function(){window.location='https://nhnet.github.io/pro/';},2000);
          }else{
-            document.querySelector('#passwordLabel').innerHTML="<span style='color:red;'>Your password was incorrect!</span>";
+            document.querySelector('.myInputPassword').value="&nbsp;<span style='color:red;'>Your password was incorrect!</span>";
          }
        }else{
-           document.querySelector('#emailLabel').innerHTML="<span style='color:red;'>Your email was incorrect!</span>";
+           document.querySelector('.myInputEmail').value="&nbsp;<span style='color:red;'>Your email was incorrect!</span>";
            if(inputPassword.length<8 || inputPassword.length>16){
-               document.querySelector('#passwordLabel').innerHTML="<span style='color:red;'>Your password was incorrect!</span>";
+               document.querySelector('.myInputPassword').value="&nbsp;<span style='color:red;'>Your password was incorrect!</span>";
          }
        }
    }
