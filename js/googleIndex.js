@@ -13,9 +13,9 @@ function onSignIn(googleUser) {
    var profileImg = profile.getImageUrl();
    var profileName = profile.getName();
    var profileEmail = profile.getEmail();
-
+   var inputEmail = document.querySelector('.myInputEmail').value;
    document.querySelector('.submit').onclick= function(){
-       if(document.querySelector('.myInputEmail').innerHTML==profileEmail){
+       if(inputEmail==profileEmail){
            document.body.innerHTML="";
        }
    }
