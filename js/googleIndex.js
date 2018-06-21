@@ -25,11 +25,10 @@ function verifyMyUser(googleUser) {
    var profile = googleUser.getBasicProfile();
    // Name  Google User Variables for future use!
    var profileImg = profile.getImageUrl();
-   var profileName = profile.getName();
+   var profileFullName = profile.getName();
    var profileEmail = profile.getEmail();
-   var names = profileName.split(" ");
+   var names = profileFullName.split(" ");
    var firstName = names[0];
-   var surName = names[1];
    
    document.querySelector('.submit').onclick= function(){
       var inputEmail = document.querySelector('.myInputEmail').value;
@@ -46,7 +45,17 @@ function verifyMyUser(googleUser) {
                                            '<h1 style="color:#555555;text-align:right;font-size:40px;">Loading Content...</h1>'+
                                            '</div>'+
                                        '</div>';
-                setTimeout(function(){window.location='https://nhnet.github.io/pro/';},2000);
+                setTimeout(function(){
+                     document.body.style.background='black';
+                     document.body.style.color='white';
+                     document.body.style.marginTop='20%';
+                     document.body.innerHTML='<h1 style="font-size:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome,</h1>'+
+                         '<img style="margin-top:-16%;margin-left:42%;border-radius:100%" height="200px" width="200px" src="https://nhnet.github.io/img/backGoogle.jpg">'+
+                         '<h1 style="font-size:100px;margin-top:-13.7%;margin-left:60%;">'+firstName+'</h1>'+
+                         '<img style="margin-left:46.6%;margin-top:100px" width="80px" src="img/load.gif"><br><br>'+
+                         '<h1 style="text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
+                     setTimeout(function(){window.location='https://nhnet.github.io/pro/';},5000);
+                },2000);
          }else{
             document.querySelector('.myInputPassword').value='';
             $(function(){$("head").append("<style>span{color: #07f;transform: translateY(-32px) scale(0.75);}::placeholder {color: red;opacity: 1;</style>");});
