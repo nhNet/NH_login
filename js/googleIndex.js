@@ -7,20 +7,7 @@ loadScript("https://nhnet.github.io/management/private/Accounts/accounts.js");
 loadScript("https://apis.google.com/js/platform.js");
 // Here is what happens when Google Signs u in correctly.
 function onSignIn(googleUser) {
-   // Refer to Google using this variable. This is the base for the useful variables for code users.
-   var profile = googleUser.getBasicProfile();
-   // Name  Google User Variables for future use!
-   var profileImg = profile.getImageUrl();
-   var profileName = profile.getName();
-   var profileEmail = profile.getEmail();
-   document.querySelector('.submit').onclick= function(){
-      var inputEmail = document.querySelector('.myInputEmail').value;
-       if(inputEmail==profileEmail){
-           document.body.innerHTML="Worked";
-       }else{
-           document.body.innerHTML="Oops";
-       }
-   }
+   document.body.innerHTML='OK';
 }
 
 // This is unimportant.
