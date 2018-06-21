@@ -12,6 +12,12 @@ setTimeout(
    },
    4000
 );
+setTimeout(
+   function(){
+      document.querySelector('.lang').style.opacity=1;
+   },
+   6000
+);
 // Here is what happens when Google Signs u in correctly.
 function verifyMyUser(googleUser) {
    // Refer to Google using this variable. This is the base for the useful variables for code users.
