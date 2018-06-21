@@ -29,6 +29,7 @@ background:white;
 border-radius:10px;
 margin-left: 34%;
 animation: fade-slide-down 5s ease-out forwards;
+animation-delay:2s;
 }
 .loginBox {
 width: 80%;
