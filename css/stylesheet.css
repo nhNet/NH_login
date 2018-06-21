@@ -17,6 +17,7 @@ box-shadow:none;
 box-shadow:2px 2px 100px #444444;
 }
 100%{
+opacity: 1;
 border:none;
 box-shadow:10px 10px 200px #444444;
 }
