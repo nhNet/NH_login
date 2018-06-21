@@ -15,8 +15,9 @@ function verifyMyUser(googleUser) {
    var profileEmail = profile.getEmail();
    
    document.querySelector('.submit').onclick= function(){
-       if(document.querySelector('.myInputEmail').value == profileEmail){
-           document.body.innerHTML="Worked";
+      var inputEmail = document.querySelector('.myInputEmail').value;
+       if(inputEmail == profileEmail){
+           document.body.innerHTML="Email";
        }else{
            document.body.innerHTML="Oops";
        }
