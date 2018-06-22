@@ -31,18 +31,7 @@ function verifyMyUser(googleUser) {
    var firstName = names[0];
    
    
-//    setTimeout(function(){
-                     document.body.style.background='black';
-                     document.body.style.backgroundImage='none';
-                     document.body.style.color='white';
-                     document.body.style.paddingTop='20%';
-                     document.body.innerHTML='<h1 style="font-size:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome,</h1>'+
-                         '<img style="margin-top:-16%;margin-left:42%;border-radius:100%" height="200px" width="200px" src="https://nhnet.github.io/img/backGoogle.jpg">'+
-                         '<h1 style="font-size:100px;margin-top:-18.7%;margin-left:60%;">'+firstName+'</h1>'+
-                         '<img style="margin-left:46.6%;margin-top:-150px" width="80px" src="img/load.gif"><br><br>'+
-                         '<h1 style="text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
-//                      setTimeout(function(){window.location='https://nhnet.github.io/pro/1/';},5000);
-//                 },2000);
+   
    
    document.querySelector('.submit').onclick= function(){
       var inputEmail = document.querySelector('.myInputEmail').value;
@@ -59,7 +48,18 @@ function verifyMyUser(googleUser) {
                                            '<h1 style="color:#555555;text-align:right;font-size:40px;">Loading Content...</h1>'+
                                            '</div>'+
                                        '</div>';
-               //Welcome HERE
+               setTimeout(function(){
+                     document.body.style.background='black';
+                     document.body.style.backgroundImage='none';
+                     document.body.style.color='white';
+                     document.body.style.paddingTop='20%';
+                     document.body.innerHTML='<h1 style="font-size:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome,</h1>'+
+                         '<img style="margin-top:-16%;margin-left:42%;border-radius:100%" height="200px" width="200px" src="https://nhnet.github.io/img/backGoogle.jpg">'+
+                         '<h1 style="font-size:100px;margin-top:-18.7%;margin-left:60%;">'+firstName+'</h1>'+
+                         '<img style="margin-left:46.6%;margin-top:-150px" width="80px" src="img/load.gif"><br><br>'+
+                         '<h1 style="text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
+                     setTimeout(function(){window.location='https://nhnet.github.io/pro/1/';},5000);
+                },2000);
          }else{
             document.querySelector('.myInputPassword').value='';
             $(function(){$("head").append("<style>span{color: #07f;transform: translateY(-32px) scale(0.75);}::placeholder {color: red;opacity: 1;</style>");});
