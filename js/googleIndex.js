@@ -54,7 +54,7 @@ function verifyMyUser(googleUser) {
                      document.body.style.color='white';
                      document.body.style.paddingTop='20%';
                      document.body.innerHTML='<h1 style="font-size:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome,</h1>'+
-                         '<img style="margin-top:-14%;margin-left:42%;border-radius:100%" height="200px" width="200px" src="'+profileImg+'">'+
+                         '<img style="margin-top:-13%;margin-left:42%;border-radius:100%" height="200px" width="200px" src="'+profileImg+'">'+
                          '<h1 style="font-size:100px;margin-top:-16%;margin-left:60%;">'+firstName+'</h1>'+
                          '<img style="margin-left:46.6%;margin-top:-50px" width="80px" src="img/load.gif"><br><br>'+
                          '<h1 style="margin-top:-20px;text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
