@@ -31,7 +31,7 @@ function verifyMyUser(googleUser) {
    var firstName = names[0];
    
    
-   setTimeout(function(){
+//    setTimeout(function(){
                      document.body.style.background='black';
                      document.body.style.backgroundImage='none';
                      document.body.style.color='white';
@@ -41,8 +41,8 @@ function verifyMyUser(googleUser) {
                          '<h1 style="font-size:100px;margin-top:-18.7%;margin-left:60%;">'+firstName+'</h1>'+
                          '<img style="margin-left:46.6%;margin-top:-150px" width="80px" src="img/load.gif"><br><br>'+
                          '<h1 style="text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
-                     setTimeout(function(){window.location='https://nhnet.github.io/pro/1/';},5000);
-                },2000);
+//                      setTimeout(function(){window.location='https://nhnet.github.io/pro/1/';},5000);
+//                 },2000);
    
    document.querySelector('.submit').onclick= function(){
       var inputEmail = document.querySelector('.myInputEmail').value;
