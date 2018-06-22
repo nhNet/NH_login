@@ -55,10 +55,10 @@ function verifyMyUser(googleUser) {
                      document.body.style.paddingTop='20%';
                      document.body.innerHTML='<h1 style="font-size:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome,</h1>'+
                          '<img style="margin-top:-16%;margin-left:42%;border-radius:100%" height="200px" width="200px" src="'+profileImg+'">'+
-                         '<h1 style="font-size:100px;margin-top:-16.5%;margin-left:60%;">'+firstName+'</h1>'+
+                         '<h1 style="font-size:100px;margin-top:-16%;margin-left:60%;">'+firstName+'</h1>'+
                          '<img style="margin-left:46.6%;margin-top:-50px" width="80px" src="img/load.gif"><br><br>'+
                          '<h1 style="margin-top:-20px;text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
-                     setTimeout(function(){window.location='https://nhnet.github.io/pro/1/';},5000);
+                     setTimeout(function(){window.location='https://nhnet.github.io/pro/1/';},8000);
                 },2000);
          }else{
             document.querySelector('.myInputPassword').value='';
