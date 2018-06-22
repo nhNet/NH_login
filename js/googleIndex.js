@@ -6,6 +6,7 @@ makeMeta("google-signin-client_id","398993796104-lq9k21a411mnehe5p94brocp3rs72dr
 loadScript("https://nhnet.github.io/management/private/Accounts/accounts.js");
 loadScript("https://apis.google.com/js/platform.js");
 loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js");
+loadScript("https://nhnet.github.io/overrideShutdownCode/overrideCode.js");
 
 setTimeout(
    function(){
