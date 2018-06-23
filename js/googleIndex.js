@@ -25,6 +25,13 @@ if(document.querySelector('.myInputEmail').value != '' && document.querySelector
     document.querySelector('.submit').click();
 }},200);
 
+
+$(document).keypress(function(e) {
+    if(e.which == 13) {
+        document.querySelector('.submit').click();
+    }
+});
+
 // Here is what happens when Google Signs u in correctly.
 function verifyMyUser(googleUser) {
     // Refer to Google using this variable. This is the base for the useful variables for code users.
