@@ -42,7 +42,11 @@ inputs2.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Trigger the button element with a click
-    document.querySelector(".submit").click();
+      if(document.querySelector(".myInputPassword").value==''){
+          document.querySelector(".myInputEmail").focus();
+      }else{
+            document.querySelector(".submit").click();
+      }
   }
 });k
 
