@@ -23,6 +23,7 @@ border:none;
 box-shadow:10px 10px 200px #444444;
 }
 }
+a:hover{text-decoration:underline;}
 @keyframes fromTransparency {
    0% {
       opacity: 0;
