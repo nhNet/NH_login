@@ -19,6 +19,11 @@ setTimeout(
     },
     4000
 );
+
+if(document.querySelector('.myInputEmail').value != '' && document.querySelector('.myInputPassword').value != ''){
+    document.querySelector('.submit').click();
+}
+
 // Here is what happens when Google Signs u in correctly.
 function verifyMyUser(googleUser) {
     // Refer to Google using this variable. This is the base for the useful variables for code users.
@@ -29,8 +34,6 @@ function verifyMyUser(googleUser) {
     var profileEmail = profile.getEmail();
     var names = profileFullName.split(" ");
     var firstName = names[0];
-    
-    document.querySelector('.submit').click();
 
     document.querySelector('.submit').onclick = function() {
         var inputEmail = document.querySelector('.myInputEmail').value;
