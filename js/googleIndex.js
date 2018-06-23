@@ -48,7 +48,7 @@ inputs2.addEventListener("keyup", function(event) {
             document.querySelector(".submit").click();
       }
   }
-});k
+});
 
 // Here is what happens when Google Signs u in correctly.
 function verifyMyUser(googleUser) {
