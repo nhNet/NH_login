@@ -20,16 +20,18 @@ setTimeout(
     4000
 );
 
-setTimeout(function(){
-if(document.querySelector('.myInputEmail').value != '' && document.querySelector('.myInputPassword').value != ''){
-    document.querySelector('.submit').click();
-}},200);
 
+var inputs = document.getElementById("inp");
 
-$(document).keypress(function(e) {
-    if(e.which == 13) {
-        document.querySelector('.submit').click();
-    }
+// Execute a function when the user releases a key on the keyboard
+inputs.addEventListener("keyup", function(event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.querySelector(".submit").click();
+  }
 });
 
 // Here is what happens when Google Signs u in correctly.
