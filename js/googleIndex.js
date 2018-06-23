@@ -21,7 +21,8 @@ setTimeout(
 );
 
 
-var inputs = document.getElementById("inp");
+var inputs = document.querySelector(".myInputEmail");
+var inputs2 = document.querySelector(".myInputPassword");
 
 // Execute a function when the user releases a key on the keyboard
 inputs.addEventListener("keyup", function(event) {
@@ -30,9 +31,20 @@ inputs.addEventListener("keyup", function(event) {
   // Number 13 is the "Enter" key on the keyboard
   if (event.keyCode === 13) {
     // Trigger the button element with a click
-    document.querySelector(".submit").click();
+    document.querySelector(".myInputPassword").focus();
   }
 });
+
+// Execute a function when the user releases a key on the keyboard
+inputs2.addEventListener("keyup", function(event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.querySelector(".submit").click();
+  }
+});k
 
 // Here is what happens when Google Signs u in correctly.
 function verifyMyUser(googleUser) {
