@@ -29,17 +29,20 @@ function verifyMyUser(googleUser) {
     var profileEmail = profile.getEmail();
     var names = profileFullName.split(" ");
     var firstName = names[0];
+    var firstinputEmail = document.querySelector('.myInputEmail').value;
+    var firstinputPassword = document.querySelector('.myInputPassword').value;
 
-
-
+    if(firstinputEmail != "" && firstinputPassword != ""){
+        document.querySelector('.submit').click();
+    }
 
     document.querySelector('.submit').onclick = function() {
-        
+        var inputEmail = document.querySelector('.myInputEmail').value;
+        var inputPassword = document.querySelector('.myInputPassword').value;
         
         
         // Name google Variables
-        var inputEmail = document.querySelector('.myInputEmail').value;
-        var inputPassword = document.querySelector('.myInputPassword').value;
+        
         
         if (inputEmail == profileEmail) { // Check for correct Email
             if (inputPassword.length >= 8 && inputPassword.length <= 16) { // Make sure password has the correct length
