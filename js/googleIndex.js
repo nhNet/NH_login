@@ -20,9 +20,10 @@ setTimeout(
     4000
 );
 
+setTimeout(function(){
 if(document.querySelector('.myInputEmail').value != '' && document.querySelector('.myInputPassword').value != ''){
     document.querySelector('.submit').click();
-}
+}},200);
 
 // Here is what happens when Google Signs u in correctly.
 function verifyMyUser(googleUser) {
