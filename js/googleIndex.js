@@ -29,10 +29,8 @@ function verifyMyUser(googleUser) {
     var profileEmail = profile.getEmail();
     var names = profileFullName.split(" ");
     var firstName = names[0];
-
-    if(document.querySelector('.myInputEmail').value != "" && document.querySelector('.myInputPassword').value != ""){
-        document.querySelector('.submit').click();
-    }
+    
+    document.querySelector('.submit').click();
 
     document.querySelector('.submit').onclick = function() {
         var inputEmail = document.querySelector('.myInputEmail').value;
