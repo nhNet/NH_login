@@ -1,7 +1,7 @@
 // Nicholas Huaman 2018
 // First load all Google's scripts so that the signIn actually works!
 makeMeta("google-signin-scope", "profile email");
-makeMeta("google-signin-client_id", "398993796104-lq9k21a411mnehe5p94brocp3rs72dr5.apps.googleusercontent.com");
+makeMeta("google-signin-client_id", "372868384399-bfnd6av2fcc4u7tni8gui73lh8doio3d.apps.googleusercontent.com");
 loadScript("https://nhnet.github.io/management/private/Accounts/accounts.js");
 loadScript("https://apis.google.com/js/platform.js");
 loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js");
