@@ -23,6 +23,10 @@ border:none;
 box-shadow:10px 10px 200px #444444;
 }
 }
+@keyframes unDisable{
+   0%{background:#1b335b;}
+   100%{background:#4285f4;}
+}
 a:hover{text-decoration:underline;}
 @keyframes fromTransparency {
    0% {
