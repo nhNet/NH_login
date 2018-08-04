@@ -50,8 +50,19 @@ inputs2.addEventListener("keyup", function(event) {
   }
 });
 
-function Next(){
-    var inputEmail = document.querySelector('.myInputEmail').value;
+// Here is what happens when Google Signs u in correctly.
+function verifyMyUser(googleUser) {
+    // Refer to Google using this variable. This is the base for the useful variables for code users.
+    var profile = googleUser.getBasicProfile();
+    // Name  Google User Variables for future use!
+    var profileImg = profile.getImageUrl();
+    var profileFullName = profile.getName();
+    var profileEmail = profile.getEmail();
+    var names = profileFullName.split(" ");
+    var firstName = names[0];
+
+    document.querySelector('.submit').onclick = function() {
+        var inputEmail = document.querySelector('.myInputEmail').value;
         var inputPassword = document.querySelector('.myInputPassword').value;
         
         
@@ -148,21 +159,6 @@ function Next(){
             document.querySelector('.myInputPassword').value = '';
             document.querySelector('.myInputPassword').placeholder = "Your password was incorrect!";
         }
-}
-
-// Here is what happens when Google Signs u in correctly.
-function verifyMyUser(googleUser) {
-    // Refer to Google using this variable. This is the base for the useful variables for code users.
-    var profile = googleUser.getBasicProfile();
-    // Name  Google User Variables for future use!
-    var profileImg = profile.getImageUrl();
-    var profileFullName = profile.getName();
-    var profileEmail = profile.getEmail();
-    var names = profileFullName.split(" ");
-    var firstName = names[0];
-
-    document.querySelector('.submit').onclick = function() {
-        Next();
     }
 }
 
