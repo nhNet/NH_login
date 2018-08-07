@@ -1,5 +1,6 @@
 html,
 body {
+cursor: url(https://nhnet.github.io/img/cursor.cur),auto;
 height: 768px;
 width:1366px;
 background:url(https://nhnet.github.io/img/backGoogle.jpg);
@@ -82,6 +83,7 @@ margin: 0;
 text-align:right;
 }
 button{
+cursor: url(https://nhnet.github.io/img/cursor.cur),auto;
 background:#4285f4;
 color:white;
 font-family: "Cabin", sans-serif;
@@ -123,6 +125,7 @@ transition: all 0.15s ease;
    pointer-events: none;
 }
 .inp input {
+cursor: url(https://nhnet.github.io/img/cursor.cur),auto;
 -webkit-appearance: none;
 width: 100%;
 border: 0;
