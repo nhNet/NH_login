@@ -60,6 +60,9 @@ margin-left: 34%;
 animation: fade-slide-down 3s ease-out forwards;
 animation-delay:1s;
 }
+a:hover{
+   cursor: url(https://nhnet.github.io/img/cursor.cur),auto;
+}
 .loginBox {
 width: 80%;
 margin-left:10%;
@@ -82,8 +85,10 @@ box-sizing: border-box;
 margin: 0;
 text-align:right;
 }
+button:hover{
+   cursor: url(https://nhnet.github.io/img/cursor.cur),auto;
+}
 button{
-cursor: url(https://nhnet.github.io/img/cursor.cur),auto;
 background:#4285f4;
 color:white;
 font-family: "Cabin", sans-serif;
