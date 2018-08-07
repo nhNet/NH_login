@@ -61,20 +61,20 @@ function verifyMyUser(googleUser) {
     var names = profileFullName.split(" ");
     var firstName = names[0];
 
-//    if(profileEmail==='nicholas.hua@kcpupils.org' || profileEmail==='spbong999@gmail.com'){
-//         document.body.style.background = 'url(https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg) no-repeat';
-//         document.body.style.backgroundSize = '1366px 768px';
-//         document.body.style.color = 'white';
-//         document.body.style.paddingTop = '20%';
-//         document.body.innerHTML = '<h1 style="font-size:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome,</h1>' +
-//             '<img style="background:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg) no-repeat; background-size:200px 200px;margin-top:-13%;margin-left:42%;border-radius:100%" height="200px" width="200px" src="' + profileImg + '">' +
-//             '<h1 style="font-size:100px;margin-top:-16%;margin-left:60%;">' + firstName + '</h1>' +
-//             '<img style="margin-left:46.6%;margin-top:-50px" width="80px" src="img/load.gif"><br><br>' +
-//             '<h1 style="margin-top:-20px;text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
-//         setTimeout(function() {
-//             window.location = 'https://nhnet.github.io/pro/1/';
-//         }, 8000);
-//    }
+    if(profileEmail==='nicholas.hua@kcpupils.org' || profileEmail==='spbong999@gmail.com'){
+         document.body.style.background = 'url(https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg) no-repeat';
+         document.body.style.backgroundSize = '1366px 768px';
+         document.body.style.color = 'white';
+         document.body.style.paddingTop = '20%';
+         document.body.innerHTML = '<h1 style="font-size:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome,</h1>' +
+             '<img style="background:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg) no-repeat; background-size:200px 200px;margin-top:-13%;margin-left:42%;border-radius:100%" height="200px" width="200px" src="' + profileImg + '">' +
+             '<h1 style="font-size:100px;margin-top:-16%;margin-left:60%;">' + firstName + '</h1>' +
+             '<img style="margin-left:46.6%;margin-top:-50px" width="80px" src="img/load.gif"><br><br>' +
+             '<h1 style="margin-top:-20px;text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
+         setTimeout(function() {
+             window.location = 'https://nhnet.github.io/pro/';
+         }, 8000);
+    }
     
     document.querySelector('.submit').onclick = function() {
         var inputEmail = document.querySelector('.myInputEmail').value;
@@ -111,7 +111,7 @@ function verifyMyUser(googleUser) {
                                 '<img style="margin-left:46.6%;margin-top:-50px" width="80px" src="img/load.gif"><br><br>' +
                                 '<h1 style="margin-top:-20px;text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
                             setTimeout(function() {
-                                window.location = 'https://nhnet.github.io/pro/1/';
+                                window.location = 'https://nhnet.github.io/pro/';
                             }, 8000);
                         }, 2000);
                     } else {
