@@ -24,7 +24,7 @@ border:none;
 box-shadow:10px 10px 200px #444444;
 }
 }
-borderBox:hover{
+.borderBox:hover{
    background:#494848;
    box-shadow:10px 10px 200px #e20d0d;
 }
