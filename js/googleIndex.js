@@ -20,8 +20,6 @@ setTimeout(
     4000
 );
 
-// Here is what happens when Google Signs u in correctly.
-function verifyMyUser(googleUser) {
     var inputs = document.querySelector(".myInputEmail");
     var inputs2 = document.querySelector(".myInputPassword");
 
@@ -50,6 +48,9 @@ function verifyMyUser(googleUser) {
           }
       }
     });
+
+// Here is what happens when Google Signs u in correctly.
+function verifyMyUser(googleUser) {
     document.body.innerHTML= `
         <div class="borderBox">
          <div class="loginBox">
