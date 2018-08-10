@@ -9,19 +9,19 @@ background-size:100% 100%;
 @keyframes fade-slide-down {
 0% {
 opacity: 0;
-box-shadow:2px 2px 100px #e20d0d;
+box-shadow:2px 2px 100px #444444/*#e20d0d*/;
 transform: translateY(-10rem);
 }
 40% {
 opacity: 1;
 transform: none;
 box-shadow:none;
-box-shadow:2px 2px 100px #e20d0d;
+box-shadow:2px 2px 100px #444444/*#e20d0d*/;
 }
 100%{
 opacity: 1;
 border:none;
-box-shadow:10px 10px 200px #e20d0d;
+box-shadow:10px 10px 200px #444444/*#e20d0d*/;
 }
 }
 @keyframes unDisable{
@@ -54,7 +54,7 @@ width: 32%;
 height:65vh;
 opacity:0;
 margin-top:12.2vh;
-background:#0f0d0d;
+background:/*#0f0d0d*/white;
 border-radius:10px;
 margin-left: 34%;
 animation: fade-slide-down 3s ease-out forwards;
@@ -67,7 +67,7 @@ a:hover{
 width: 80%;
 margin-left:10%;
 height:65%;
-background:#0f0d0d;
+background:/*#0f0d0d*/white;
 }
 .dot {
 font-size: 0.001px;
