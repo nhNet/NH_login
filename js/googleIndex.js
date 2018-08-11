@@ -64,7 +64,7 @@ function verifyMyUser(googleUser) {
         if(document.activeElement===inputs) {
             inputs2.focus();
         }
-        if(document.activeElement=inputs2.hasFocus(){
+        if(document.activeElement=inputs2){
            if(inputs2.value===''){
                 inputs.focus();
             }else{
