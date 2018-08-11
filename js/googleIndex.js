@@ -61,16 +61,16 @@ function verifyMyUser(googleUser) {
     
     $(document).keypress(function(e) {
     if(e.which == 13) {
-        if(document.activeElement===inputs) {
+        $("inputs").is(":focus"){
             inputs2.focus();
-        }
-        if(document.activeElement=inputs2){
+        });
+        $("inputs2").is(":focus"){
            if(inputs2.value===''){
                 inputs.focus();
             }else{
                 document.querySelector('.submit).click();
             }
-       }
+       });
     }
 });
     // Refer to Google using this variable. This is the base for the useful variables for code users.
