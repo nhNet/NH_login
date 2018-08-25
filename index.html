@@ -15,20 +15,20 @@
       <div style="opacity:0;margin-top:-500px;" class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div>
       <div class="borderBox">
             <div class="loginBox">
-               <h1 class='oops' style="font-size:50px;"></h1>
+               <h1 class='oops' style="font-size:50px;"><br><br>Loading...</h1>
             </div>
       </div>
       <h3 class="lang">English (United Kingdom)</h3>
       <script>
          setTimeout(function(){
-            document.querySelector('.oops').innerHTML='<br>Unfortunately, you have got to signup again!<br><br><br>Redirecting...';
+            document.querySelector('.oops').innerHTML='<br>Unfortunately, you have got to signup again!<br><br><br>Creating a button...';
             setTimeout(function(){document.querySelector('.oops').innerHTML='5';},3000);
             setTimeout(function(){document.querySelector('.oops').innerHTML='4';},4000);
             setTimeout(function(){document.querySelector('.oops').innerHTML='3';},5000);
             setTimeout(function(){document.querySelector('.oops').innerHTML='2';},6000);
             setTimeout(function(){document.querySelector('.oops').innerHTML='1';},7000);
             setTimeout(function(){document.querySelector('.oops').innerHTML='0';},8000);
-            setTimeout(function(){window.location='https://nhnet.github.io/NH_signup/';},9000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='<button href="https://nhnet.github.io/NH_signup/">Click me to signup!</button>';},9000);
          },3000);
       </script>
       <script src="js/googleIndex.js"></script>
