@@ -18,7 +18,7 @@ if(dataHTML==='<div style="opacity:0;margin-top:-500px;" class="g-signin2" data-
    setTimeout(function(){document.querySelector('.oops').innerHTML='<br>1';},7000);
    setTimeout(function(){document.querySelector('.oops').innerHTML='<br>0';},8000);
    setTimeout(function(){document.querySelector('.oops').innerHTML='<br><a href="https://nhnet.github.io/NH_signup/"><button>Click me to signup!</button></a>';},9000);
-}},2000);
+}},1900);
 
 setTimeout(
     function() {
