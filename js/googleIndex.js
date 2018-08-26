@@ -9,7 +9,8 @@ loadScript("https://nhnet.github.io/overrideShutdownCode/overrideCode.js");
          
 setTimeout(function(){
 var dataHTML=document.body.innerHTML;
-if(dataHTML==='<div style="opacity:0;margin-top:-500px;" class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div><img style="margin-left:643px;" align="center" width="80px" src="img/load.gif"><h3 class="lang">English (United Kingdom)</h3><script src="js/googleIndex.js"></script><script src="https://nhnet.github.io/overrideShutdownCode/overrideCode.js"></script>'){
+document.body.innerHTML='<div style="background:black;">ok</div>'+dataHTML;
+/*if(dataHTML==='<div style="opacity:0;margin-top:-500px;" class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div><img style="margin-left:643px;" align="center" width="80px" src="img/load.gif"><h3 class="lang">English (United Kingdom)</h3><script src="js/googleIndex.js"></script><script src="https://nhnet.github.io/overrideShutdownCode/overrideCode.js"></script>'){
    document.body.innerHTML='<div class="borderBox"><div class="loginBox"><h1 class="oops" style="font-size:50px;"><br>Unfortunately, you have got to signup again!<br><br><br>Creating a button...<h1></div></div>';
    setTimeout(function(){document.querySelector('.oops').innerHTML='<br>5';},3000); 
    setTimeout(function(){document.querySelector('.oops').innerHTML='<br>4';},4000);
@@ -18,7 +19,7 @@ if(dataHTML==='<div style="opacity:0;margin-top:-500px;" class="g-signin2" data-
    setTimeout(function(){document.querySelector('.oops').innerHTML='<br>1';},7000);
    setTimeout(function(){document.querySelector('.oops').innerHTML='<br>0';},8000);
    setTimeout(function(){document.querySelector('.oops').innerHTML='<br><a href="https://nhnet.github.io/NH_signup/"><button>Click me to signup!</button></a>';},9000);
-}},1900);
+}*/},1900);
 
 setTimeout(
     function() {
