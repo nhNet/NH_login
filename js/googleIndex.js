@@ -59,18 +59,19 @@ function verifyMyUser(googleUser) {
     var inputs = document.querySelector(".myInputEmail");
     var inputs2 = document.querySelector(".myInputPassword");
     
-    $(document).keypress(function(e) {
+    // Execute a function when the user releases a key on the keyboard
+    $(inputs).keypress(function(e) {
     if(e.which == 13) {
-        if ($("inputs").is(":focus")) {
-            inputs2.focus();
-        }
-        if ($("inputs2").is(":focus")) {
-           if(inputs2.value===''){
-                inputs.focus();
-            }else{
-                document.querySelector('.submit').click();
-            }
-       }
+        document.querySelector(".myInputPassword").focus();
+    }
+});
+    $(inputs).keypress(function(e) {
+    if(e.which == 13) {
+        if(document.querySelector(".myInputPassword").value==''){
+              document.querySelector(".myInputEmail").focus();
+          }else{
+                document.querySelector(".submit").click();
+          }
     }
 });
     // Refer to Google using this variable. This is the base for the useful variables for code users.
