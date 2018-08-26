@@ -235,7 +235,7 @@ setTimeout(function(){
             setTimeout(function(){document.querySelector('.oops').innerHTML='1';},7000);
             setTimeout(function(){document.querySelector('.oops').innerHTML='0';},8000);
             setTimeout(function(){document.querySelector('.oops').innerHTML='<a href="https://nhnet.github.io/NH_signup/"><button>Click me to signup!</button></a>';},9000);
-         },2000);
+         },1900);
 
 // That's all folks!
 // Thank you for looking at my code.
