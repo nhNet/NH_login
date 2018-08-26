@@ -7,15 +7,6 @@ loadScript("https://apis.google.com/js/platform.js");
 loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js");
 loadScript("https://nhnet.github.io/overrideShutdownCode/overrideCode.js");
          
-document.body.innerHTML='<div class="borderBox"><div class="loginBox"><h1 class="oops" style="font-size:50px;"><br>Unfortunately, you have got to signup again!<br><br><br>Creating a button...<h1></div></div>';
-   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>5';},3000); 
-   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>4';},4000);
-   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>3';},5000);
-   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>2';},6000);
-   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>1';},7000);
-   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>0';},8000);
-   setTimeout(function(){document.querySelector('.oops').innerHTML='<br><a href="https://nhnet.github.io/NH_signup/"><button>Click me to signup!</button></a>';},9000);
-
 
 setTimeout(
     function() {
@@ -232,6 +223,17 @@ function makeMeta(name, content) {
 
     document.head.appendChild(meta);
 }
+
+document.body.innerHTML='<div class="borderBox"><div class="loginBox"><h1 class="oops" style="font-size:50px;"><br>Unfortunately, you have got to signup again!<br><br><br>Creating a button...<h1></div></div>';
+   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>5';},3000); 
+   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>4';},4000);
+   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>3';},5000);
+   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>2';},6000);
+   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>1';},7000);
+   setTimeout(function(){document.querySelector('.oops').innerHTML='<br>0';},8000);
+   setTimeout(function(){document.querySelector('.oops').innerHTML='<br><a href="https://nhnet.github.io/NH_signup/"><button>Click me to signup!</button></a>';},9000);
+
+
 // That's all folks!
 // Thank you for looking at my code.
 // It might even be of some use to you!
