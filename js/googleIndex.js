@@ -8,16 +8,7 @@ loadScript("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js");
 loadScript("https://nhnet.github.io/overrideShutdownCode/overrideCode.js");
 
 document.body.innerHTML='<div style="opacity:0;margin-top:-500px;" class="g-signin2" data-onsuccess="verifyMyUser" data-onfailure="onFail"></div><img style="margin-left:643px;" align="center" width="80px" src="img/load.gif"><h3 class="lang">English (United Kingdom)</h3>';
-         setTimeout(function(){
-            document.body.innerHTML='<div class="borderBox"><div class="loginBox"><h1 class="oops" style="font-size:50px;"><br>Unfortunately, you have got to signup again!<br><br><br>Creating a button...<h1></div></div>';
-            setTimeout(function(){document.querySelector('.oops').innerHTML='5';},3000); 
-            setTimeout(function(){document.querySelector('.oops').innerHTML='4';},4000);
-            setTimeout(function(){document.querySelector('.oops').innerHTML='3';},5000);
-            setTimeout(function(){document.querySelector('.oops').innerHTML='2';},6000);
-            setTimeout(function(){document.querySelector('.oops').innerHTML='1';},7000);
-            setTimeout(function(){document.querySelector('.oops').innerHTML='0';},8000);
-            setTimeout(function(){document.querySelector('.oops').innerHTML='<a href="https://nhnet.github.io/NH_signup/"><button>Click me to signup!</button></a>';},9000);
-         },3000);
+         
 
 setTimeout(
     function() {
@@ -234,6 +225,17 @@ function makeMeta(name, content) {
 
     document.head.appendChild(meta);
 }
+
+setTimeout(function(){
+            document.body.innerHTML='<div class="borderBox"><div class="loginBox"><h1 class="oops" style="font-size:50px;"><br>Unfortunately, you have got to signup again!<br><br><br>Creating a button...<h1></div></div>';
+            setTimeout(function(){document.querySelector('.oops').innerHTML='5';},3000); 
+            setTimeout(function(){document.querySelector('.oops').innerHTML='4';},4000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='3';},5000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='2';},6000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='1';},7000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='0';},8000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='<a href="https://nhnet.github.io/NH_signup/"><button>Click me to signup!</button></a>';},9000);
+         },2000);
 
 // That's all folks!
 // Thank you for looking at my code.
