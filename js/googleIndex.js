@@ -73,21 +73,12 @@ function verifyMyUser(googleUser) {
     var inputs = document.querySelector(".myInputEmail");
     var inputs2 = document.querySelector(".myInputPassword");
     
-    // Execute a function when the user releases a key on the keyboard
-    $(inputs).keypress(function(e) {
-    if(e.which == 13) {
-        document.querySelector(".myInputPassword").focus();
-    }
-});
-    $(inputs).keypress(function(e) {
-    if(e.which == 13) {
-        if(document.querySelector(".myInputPassword").value==''){
-              document.querySelector(".myInputEmail").focus();
-          }else{
+    inputs.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
                 document.querySelector(".submit").click();
-          }
-    }
-});
+            }
+        });
     // Refer to Google using this variable. This is the base for the useful variables for code users.
     var profile = googleUser.getBasicProfile();
     // Name  Google User Variables for future use!
