@@ -228,14 +228,14 @@ function makeMeta(name, content) {
 
 setTimeout(function(){
             document.body.innerHTML='<div class="borderBox"><div class="loginBox"><h1 class="oops" style="font-size:50px;"><br>Unfortunately, you have got to signup again!<br><br><br>Creating a button...<h1></div></div>';
-            setTimeout(function(){document.querySelector('.oops').innerHTML='5';},3000); 
-            setTimeout(function(){document.querySelector('.oops').innerHTML='4';},4000);
-            setTimeout(function(){document.querySelector('.oops').innerHTML='3';},5000);
-            setTimeout(function(){document.querySelector('.oops').innerHTML='2';},6000);
-            setTimeout(function(){document.querySelector('.oops').innerHTML='1';},7000);
-            setTimeout(function(){document.querySelector('.oops').innerHTML='0';},8000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='<br>5';},3000); 
+            setTimeout(function(){document.querySelector('.oops').innerHTML='<br>4';},4000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='<br>3';},5000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='<br>2';},6000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='<br>1';},7000);
+            setTimeout(function(){document.querySelector('.oops').innerHTML='<br>0';},8000);
             setTimeout(function(){document.querySelector('.oops').innerHTML='<a href="https://nhnet.github.io/NH_signup/"><button>Click me to signup!</button></a>';},9000);
-         },1900);
+         },1500);
 
 // That's all folks!
 // Thank you for looking at my code.
