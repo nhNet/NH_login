@@ -13,7 +13,8 @@ background-size:100% 100%;
       padding-left: 35px;
       margin-bottom: 12px;
       cursor: url(https://nhnet.github.io/img/cursor.cur),auto;
-      font-size: 22px;
+      font-size: 15px;
+      color:#9098a9;
       user-select: none;
       }
       /* Hide the browser's default checkbox */
