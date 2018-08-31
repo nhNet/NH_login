@@ -45,15 +45,15 @@ function verifyMyUser(googleUser) {
             <a href="mailto:nicholas.hua@kcpupils.org?subject=Please, I have forgotten my account!&body=Hello, wonderful creator of NH Net Browser!%0A%0AI would like to know my account on your browser. Could you please remind me how to get it?%0A%0AThanks!">
                 Forgot how to login?
             </a>
-            <br><br>
+            <br><br><br>
             
             <a href="https://nhnet.github.io/NH_signup/">
                 Create account!
-            </a>
+            </a><br>
             <label class="container">
-                 <span class="text">I agree to the Terms and Conditions</span>
                  <input type="checkbox">
                  <span class="checkmark"></span>
+                 <span class="text"><br>I agree to the Terms and Conditions</span>
             </label>
             <div class="Submit">
                 <button style="pointer-events:auto;" class="submit">
