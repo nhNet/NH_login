@@ -49,12 +49,7 @@ function verifyMyUser(googleUser) {
             
             <a href="https://nhnet.github.io/NH_signup/">
                 Create account!
-            </a><br>
-            <label class="container">
-                 <input type="checkbox">
-                 <span class="checkmark"></span>
-                 <span class="text"><br>I agree to the Terms and Conditions</span>
-            </label>
+            </a><br><br><br>
             <div class="Submit">
                 <button style="pointer-events:auto;" class="submit">
                     NEXT
