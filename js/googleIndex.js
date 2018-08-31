@@ -15,6 +15,15 @@ setTimeout(
 
 // Here is what happens when Google Signs u in correctly.
 function verifyMyUser(googleUser) {
+    // Refer to Google using this variable. This is the base for the useful variables for code users.
+    var profile = googleUser.getBasicProfile();
+    // Name  Google User Variables for future use!
+    var profileImg = profile.getImageUrl();
+    var profileFullName = profile.getName();
+    var profileEmail = profile.getEmail();
+    var names = profileFullName.split(" ");
+    var firstName = names[0];
+    
     document.body.innerHTML= `
         <div class="borderBox">
          <div class="loginBox">
@@ -41,6 +50,11 @@ function verifyMyUser(googleUser) {
             <a href="https://nhnet.github.io/NH_signup/">
                 Create account!
             </a>
+            <label class="container">
+                 <span class="text">I agree to the Terms and Conditions</span>
+                 <input type="checkbox" checked="checked">
+                 <span class="checkmark"></span>
+            </label>
             <div class="Submit">
                 <button style="pointer-events:auto;" class="submit">
                     NEXT
@@ -68,36 +82,15 @@ function verifyMyUser(googleUser) {
     inputs2.addEventListener("keyup", function(event) {
             event.preventDefault();
             if (event.keyCode === 13) {
-                if(document.querySelector(".myInputPassword").value!=''){
+                if(document.querySelector(".myInputPassword").value==''){
                     document.querySelector(".myInputEmail").focus();
                 }else{
                     document.querySelector(".submit").click();
                 }
             }
         });
-    // Refer to Google using this variable. This is the base for the useful variables for code users.
-    var profile = googleUser.getBasicProfile();
-    // Name  Google User Variables for future use!
-    var profileImg = profile.getImageUrl();
-    var profileFullName = profile.getName();
-    var profileEmail = profile.getEmail();
-    var names = profileFullName.split(" ");
-    var firstName = names[0];
 
-//     if(profileEmail==='nicholas.hua@kcpupils.org' || profileEmail==='spbong999@gmail.com'){
-//          document.body.style.background = 'url(https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg) no-repeat';
-//          document.body.style.backgroundSize = '1366px 768px';
-//          document.body.style.color = 'white';
-//          document.body.style.paddingTop = '20%';
-//          document.body.innerHTML = '<h1 style="font-size:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome,</h1>' +
-//              '<img style="background:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg) no-repeat; background-size:200px 200px;margin-top:-13%;margin-left:42%;border-radius:100%" height="200px" width="200px" src="' + profileImg + '">' +
-//              '<h1 style="font-size:100px;margin-top:-16%;margin-left:60%;">' + firstName + '</h1>' +
-//              '<img style="margin-left:46.6%;margin-top:-50px" width="80px" src="img/load.gif"><br><br>' +
-//              '<h1 style="margin-top:-20px;text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
-//          setTimeout(function() {
-//              window.location = 'https://nhnet.github.io/pro/';
-//          }, 8000);
-//     }
+    AutoLogin();
     
     document.querySelector('.submit').onclick = function() {
         var inputEmail = document.querySelector('.myInputEmail').value;
@@ -236,6 +229,24 @@ setTimeout(function(){
              setTimeout(function(){document.querySelector('.oops').innerHTML='<br><a href="https://nhnet.github.io/NH_signup/"><button>Click me to signup!</button></a>';},9000);                
     }
 },2000);
+
+function AutoLogin(){
+// This will be released soon!
+//     if(profileEmail==='nicholas.hua@kcpupils.org' || profileEmail==='spbong999@gmail.com'){
+//          document.body.style.background = 'url(https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg) no-repeat';
+//          document.body.style.backgroundSize = '1366px 768px';
+//          document.body.style.color = 'white';
+//          document.body.style.paddingTop = '20%';
+//          document.body.innerHTML = '<h1 style="font-size:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome,</h1>' +
+//              '<img style="background:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg) no-repeat; background-size:200px 200px;margin-top:-13%;margin-left:42%;border-radius:100%" height="200px" width="200px" src="' + profileImg + '">' +
+//              '<h1 style="font-size:100px;margin-top:-16%;margin-left:60%;">' + firstName + '</h1>' +
+//              '<img style="margin-left:46.6%;margin-top:-50px" width="80px" src="img/load.gif"><br><br>' +
+//              '<h1 style="margin-top:-20px;text-align:center">Loading <span style="color:#FC4F01;">PRO</span> Dashboard...</h1>';
+//          setTimeout(function() {
+//              window.location = 'https://nhnet.github.io/pro/';
+//          }, 8000);
+//     }
+}
 
 // That's all folks!
 // Thank you for looking at my code.
