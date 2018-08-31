@@ -62,7 +62,17 @@ function verifyMyUser(googleUser) {
     inputs.addEventListener("keyup", function(event) {
             event.preventDefault();
             if (event.keyCode === 13) {
-                document.querySelector(".submit").click();
+               document.querySelector(".myInputPassword").focus();
+            }
+        });
+    inputs2.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                if(document.querySelector(".myInputPassword").value!=''){
+                    document.querySelector(".myInputEmail").focus();
+                }else{
+                    document.querySelector(".submit").click();
+                }
             }
         });
     // Refer to Google using this variable. This is the base for the useful variables for code users.
