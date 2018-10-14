@@ -113,7 +113,7 @@ function verifyMyUser(googleUser) {
                         // If it is, execute this...
                         setTimeout(function() {
                             document.body.style.background = 'url(https://image.freepik.com/free-psd/abstract-background-design_1297-87.jpg) no-repeat';
-                            document.body.style.backgroundSize = '1366px 768px';
+                            document.body.style.backgroundSize = '100% 100vh';
                             document.body.style.color = 'white';
                             document.body.style.paddingTop = '20%';
                             document.body.innerHTML = '<h1 style="font-size:100px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome,</h1>' +
